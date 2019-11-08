@@ -8,7 +8,7 @@ public abstract class Conta {
 	// {return "Conta";}
 
 	public void saca(double valor) {
-		this.saldo -= (0.10);
+		this.saldo -= valor;
 
 	}
 
