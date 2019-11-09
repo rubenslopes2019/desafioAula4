@@ -6,7 +6,7 @@ import br.com.fiap.contas.modelo.Tributavel;
 
 public class TestaConta {
 	public static void main(String[] args) {
-		ContaCorrente cc = new ContaCorrente();
+		ContaCorrente cc = new ContaCorrente("paulo", 123.0, "0001");
 		cc.deposita(330);
 		System.out.println(cc.getTipo());
 		System.out.println(cc.getSaldo());
@@ -14,7 +14,7 @@ public class TestaConta {
 		System.out.println(cc.getSaldo());
 		//cc.saca(1000);
 		
-		ContaPoupanca cp = new ContaPoupanca();
+		ContaPoupanca cp = new ContaPoupanca("paulo", 123.0, "0001");
 		cp.deposita(200);
 		System.out.println(cp.getTipo());
 		System.out.println(cp.getSaldo());
@@ -24,6 +24,7 @@ public class TestaConta {
 		cp.transfere(50, cc);
 		System.out.println(cp.getSaldo());
 		System.out.println(cc.getSaldo());
+		System.out.println(cc.toString());
 		
 	}
 }

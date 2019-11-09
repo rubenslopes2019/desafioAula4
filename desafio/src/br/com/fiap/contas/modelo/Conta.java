@@ -2,7 +2,16 @@ package br.com.fiap.contas.modelo;
 
 public abstract class Conta {
 
-	public double saldo;
+	protected double saldo;
+	public String titular;
+	public Double numero;
+	public String agencia;
+	
+	public Conta(String titular, Double numero, String agencia) {
+		this.titular = titular;
+		this.numero = numero;
+		this.agencia = agencia;
+	}
 
 	public abstract String getTipo();
 	// {return "Conta";}
@@ -31,6 +40,12 @@ public abstract class Conta {
 
 	public void setSaldo(double saldo) {
 		this.saldo = saldo;
+	}
+	
+	@Override
+	public String toString() {
+		return "[titular=" + titular + ", numero=" + numero
+				 + ", agencia=" + agencia + "]";
 	}
 	
 	
