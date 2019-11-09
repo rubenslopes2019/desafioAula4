@@ -1,15 +1,15 @@
 package br.com.fiap.contas.modelo;
 
 public class ContaCorrente extends Conta implements Tributavel {
-	
-	 public ContaCorrente(String titular, Double numero, String agencia) {
+
+	public ContaCorrente(String titular, Double numero, String agencia) {
 		super(titular, numero, agencia);
 	}
 
 	public String getTipo() {
-		 return "Conta Corrente";
-		 }
-	 
+		return "Conta Corrente";
+	}
+
 	@Override
 	public void saca(double valor) {
 		if (valor < 0) {
@@ -21,14 +21,9 @@ public class ContaCorrente extends Conta implements Tributavel {
 		this.saldo -= (valor + 0.10);
 	}
 
-	 
 	@Override
 	public double getValorImposto() {
 		return super.getSaldo() * 0.01;
 	}
-
-	
-	
-	
 
 }

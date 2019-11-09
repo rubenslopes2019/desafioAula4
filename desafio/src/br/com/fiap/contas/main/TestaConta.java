@@ -12,19 +12,19 @@ public class TestaConta {
 		System.out.println(cc.getSaldo());
 		cc.saca(10);
 		System.out.println(cc.getSaldo());
-		//cc.saca(1000);
-		
+		// cc.saca(1000);
+
 		ContaPoupanca cp = new ContaPoupanca("paulo", 123.0, "0001");
 		cp.deposita(200);
 		System.out.println(cp.getTipo());
 		System.out.println(cp.getSaldo());
 		cp.saca(10);
 		System.out.println(cp.getSaldo());
-		//cc.saca(1000);
+		// cc.saca(1000);
 		cp.transfere(50, cc);
 		System.out.println(cp.getSaldo());
 		System.out.println(cc.getSaldo());
 		System.out.println(cc.toString());
-		
+
 	}
 }

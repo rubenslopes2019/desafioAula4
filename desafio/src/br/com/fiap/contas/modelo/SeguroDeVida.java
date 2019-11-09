@@ -9,8 +9,33 @@ public class SeguroDeVida implements Tributavel {
 		return 42 + this.valor * 0.02;
 
 	}
-	
-	public String getTipo(){
-		 return "Seguro de Vida";
-		 }
+
+	public String getTipo() {
+		return "Seguro de Vida";
+	}
+
+	public double getValor() {
+		return valor;
+	}
+
+	public void setValor(double valor) {
+		this.valor = valor;
+	}
+
+	public String getTitular() {
+		return titular;
+	}
+
+	public void setTitular(String titular) {
+		this.titular = titular;
+	}
+
+	public int getNumeroApolice() {
+		return numeroApolice;
+	}
+
+	public void setNumeroApolice(int numeroApolice) {
+		this.numeroApolice = numeroApolice;
+	}
+
 }

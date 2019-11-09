@@ -6,7 +6,7 @@ public abstract class Conta {
 	public String titular;
 	public Double numero;
 	public String agencia;
-	
+
 	public Conta(String titular, Double numero, String agencia) {
 		this.titular = titular;
 		this.numero = numero;
@@ -41,13 +41,10 @@ public abstract class Conta {
 	public void setSaldo(double saldo) {
 		this.saldo = saldo;
 	}
-	
+
 	@Override
 	public String toString() {
-		return "[titular=" + titular + ", numero=" + numero
-				 + ", agencia=" + agencia + "]";
+		return "[titular=" + titular + ", numero=" + numero + ", agencia=" + agencia + "]";
 	}
-	
-	
 
 }
