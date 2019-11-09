@@ -7,6 +7,9 @@ public abstract class Conta {
 	public Double numero;
 	public String agencia;
 
+	public Conta() {
+	}
+	
 	public Conta(String titular, Double numero, String agencia) {
 		this.titular = titular;
 		this.numero = numero;
@@ -46,5 +49,19 @@ public abstract class Conta {
 	public String toString() {
 		return "[titular=" + titular + ", numero=" + numero + ", agencia=" + agencia + "]";
 	}
+
+	public void setTitular(String titular) {
+		this.titular = titular;
+	}
+
+	public void setNumero(Double numero) {
+		this.numero = numero;
+	}
+
+	public void setAgencia(String agencia) {
+		this.agencia = agencia;
+	}
+	
+	
 
 }

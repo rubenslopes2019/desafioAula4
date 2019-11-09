@@ -2,6 +2,10 @@ package br.com.fiap.contas.modelo;
 
 public class ContaCorrente extends Conta implements Tributavel {
 
+	public ContaCorrente() {
+		super();
+	}
+	
 	public ContaCorrente(String titular, Double numero, String agencia) {
 		super(titular, numero, agencia);
 	}

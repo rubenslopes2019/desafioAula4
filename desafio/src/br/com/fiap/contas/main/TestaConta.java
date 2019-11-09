@@ -26,15 +26,6 @@ public class TestaConta {
 		System.out.println(cp.getSaldo());
 		System.out.println(cc.getSaldo());
 		System.out.println(cc.toString());
-		
-		
-		
-		 Conta[] contas = new Conta[10];
-		 for (int i = 0; i < contas.length; i++) {
-		  Conta conta = new ContaCorrente("conta"+i, (double) i, "0001");
-		  conta.deposita(i * 100.0);
-		  
-		  }
 
 	}
 }

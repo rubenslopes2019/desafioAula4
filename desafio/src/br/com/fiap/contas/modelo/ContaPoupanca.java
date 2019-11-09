@@ -2,6 +2,11 @@ package br.com.fiap.contas.modelo;
 
 public class ContaPoupanca extends Conta {
 
+	
+	public ContaPoupanca() {
+		super();
+	}
+
 	public ContaPoupanca(String titular, Double numero, String agencia) {
 		super(titular, numero, agencia);
 	}
