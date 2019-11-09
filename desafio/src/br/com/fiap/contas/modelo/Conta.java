@@ -1,6 +1,6 @@
 package br.com.fiap.contas.modelo;
 
-public abstract class Conta {
+public abstract class Conta implements Comparable < Conta > {
 
 	protected double saldo;
 	public String titular;
@@ -61,6 +61,10 @@ public abstract class Conta {
 	public void setAgencia(String agencia) {
 		this.agencia = agencia;
 	}
+	
+	public int compareTo (Conta outraConta) {
+		return this .titular.compareTo(outraConta.titular);
+		}
 	
 	
 
